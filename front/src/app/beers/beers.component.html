@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Cervejarias</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="breweries.length === 0">Nenhuma cervejaria encontrada.</div>
+    <mat-list>
+      <mat-list-item *ngFor="let brewery of breweries">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{ brewery.name }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ brewery.city }}, {{ brewery.state }}</p>
+            <p>
+              <a [href]="brewery.website_url" target="_blank">Visite o site</a>
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="prevPage()" [disabled]="currentPage === 1">
+      Anterior
+    </button>
+    <button
+      mat-button
+      (click)="nextPage()"
+      [disabled]="currentPage === totalPages"
+    >
+      Próxima
+    </button>
+  </mat-card-actions>
+  <span> Página {{ currentPage }} de {{ totalPages }} </span>
+</mat-card>

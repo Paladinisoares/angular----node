@@ -1,0 +1,27 @@
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 16px;
+}
+
+.button-group {
+  margin-top: 16px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+}

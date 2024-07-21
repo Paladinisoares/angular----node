@@ -1,0 +1,16 @@
+mat-card {
+  margin: 16px 0;
+}
+
+mat-list-item {
+  margin-bottom: 16px;
+}
+
+a {
+  color: #1976d2; /* Cor primária do Angular Material */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

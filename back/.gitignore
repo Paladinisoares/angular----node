@@ -1,0 +1,71 @@
+# Dependências de Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# Dependências do Angular
+.angular/
+
+# Arquivos de build
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema de cache
+.cache/
+*.cache
+
+# Ambiente local
+.env
+.env.local
+
+# IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln
+*.swp
+*.swo
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Backup
+*.bak
+*.tmp
+
+# Teste
+coverage/
+
+# Arquivos temporários
+*.log
+*.pid
+
+# Arquivos específicos do Angular
+.angular/
+src/**/*.js
+src/**/*.js.map
+
+# Ignorar arquivos específicos do backend
+back/.env
+back/.env.local
+back/node_modules/
+back/dist/
+back/build/
+back/*.log
+back/.cache/
+
+# Outros
+*.pem
+*.key
+*.crt
+*.p12
+*.sublime-workspace
+*.sublime-project
