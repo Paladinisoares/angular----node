@@ -43,4 +43,39 @@ O projeto está dividido em duas partes:
 4. Inicie o seervidor com npm start
    A API estará disponível em http://localhost:3000.
 
+## Endpoints da api
+### Autenticação
+Para obter um token de autenticação, use o seguinte comando:
+   curl --location 'localhost:3000/auth' \
+   --header 'Content-Type: application/json' \
+   --data '{"username":"mytapp","password":"teste"}'
+
+
+### Registro de usuário
+curl --location 'localhost:3000/register' \
+--header 'Authorization: TOKEN' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "mytapp",
+    "password": "teste",
+    "passwordConfirm": "teste"
+}'
+
+### UPDATE de usuário
+curl --location 'localhost:3000/register' \
+--header 'Authorization: TOKEN' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "mytapp",
+    "password": "teste",
+    "passwordConfirm": "teste"
+}'
+
+### Exclusão de usuário
+curl --location --request DELETE 'localhost:3000/delete' \
+--header 'Authorization: Bearer YOUR_TOKEN_HERE' \
+--data ''
+
+
+
 ### AS VARIÁVEIS ACIMA FORAM CRIADAS PARA ESTE ÚNICO PROJETO
